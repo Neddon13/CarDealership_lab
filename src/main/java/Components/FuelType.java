@@ -1,4 +1,8 @@
 package Components;
 
-public class FuelType {
+public enum FuelType {
+    PETROL,
+    DIESEL,
+    HYBRID,
+    ELECTRIC
 }

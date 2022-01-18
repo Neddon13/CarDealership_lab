@@ -2,6 +2,8 @@ package ComponentsTest;
 
 import org.junit.Before;
 import Components.Tyres;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class TyresTest {
 
@@ -9,6 +11,11 @@ public class TyresTest {
 
     @Before
     public void before() {
-        tyres = new Tyres();
+        tyres = new Tyres(22);
+    }
+
+    @Test
+    public void hasTyreWidth() {
+        assertEquals(22, tyres.getTyreWidth());
     }
 }
